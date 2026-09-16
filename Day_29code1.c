@@ -1,0 +1,26 @@
+Q57: Find the sum of array elements.
+
+#include <stdio.h>
+
+int main()
+{
+    int a[5], i, sum = 0;
+
+    printf("Enter 5 elements:\n");
+
+    // Read array elements
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    // Find sum
+    for(i = 0; i < 5; i++)
+    {
+        sum = sum + a[i];
+    }
+
+    printf("Sum = %d", sum);
+
+    return 0;
+}
